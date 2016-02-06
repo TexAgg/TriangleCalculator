@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="style/styles.css"></link>
 	<link rel="icon" href="images/red_triangle.png"></link>
 	<script src="scripts/triangle.js"></script>
-	<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css"></link>
+	<!--http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page-->
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
 </head>
 <body>
 	<div id="input_area">
@@ -32,13 +34,13 @@
 		Area:
 		<input type="number" id="answer" readonly></input>
 		<br></br>
-		$\theta_c$:
+		\(\theta_c\):
 		<input type="number" id="theta_c" readonly></input>
 		<br></br>
-		$\theta_b$:
+		\(\theta_b\):
 		<input type="number" id="theta_b" readonly></input>
 		<br></br>
-		$\theta_a$:
+		\(\theta_a\):
 		<input type="number" id="theta_a" readonly></input>
 	</div>	
 	<canvas id="myCanvas" width="500" height="400"></canvas>
