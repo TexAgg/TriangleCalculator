@@ -1,6 +1,5 @@
 //Calculate the area of a triangle using Heron's formula
-function triangle_area(aa,bb,cc)
-{
+function triangle_area(aa,bb,cc){
 	var a = new Number(aa);
 	var b = new Number(bb);
 	var c = new Number(cc);
@@ -11,8 +10,7 @@ function triangle_area(aa,bb,cc)
 	return ayy;
 };
 
-function calculate()
-{
+function calculate(){
 	var x = document.getElementById("length_a").value;
 	var y = document.getElementById("length_b").value;
 	var z = document.getElementById("length_c").value;
@@ -23,8 +21,7 @@ function calculate()
 	document.getElementById("answer").value = a;
 };
 
-function draw()
-{	
+function draw(){	
 	var a = document.getElementById("length_a").value;
 	var b = document.getElementById("length_b").value;
 	var c = document.getElementById("length_c").value;
@@ -89,8 +86,7 @@ function draw()
 	document.getElementById("theta_a").value = theta_a;
 };
 
-function main()
-{
+function main(){
 	calculate();
 	draw();
 };
